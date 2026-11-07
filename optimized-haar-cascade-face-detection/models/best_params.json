@@ -1,0 +1,16 @@
+{
+    "model": "OpenCV Haar Cascade",
+    "classifier": "models/haarcascade_frontalface_default.xml",
+    "parameters": {
+        "scaleFactor": 1.1,
+        "minNeighbors": 5,
+        "minSize": [30, 30],
+        "maxSize": [500, 500]
+    },
+    "metrics": {
+        "accuracy": 0.90,
+        "precision": 0.89,
+        "recall": 0.92,
+        "f1_score": 0.90
+    }
+}
