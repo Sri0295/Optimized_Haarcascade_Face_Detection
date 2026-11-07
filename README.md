@@ -1,5 +1,5 @@
-Enhanced Haar Cascades Model for Face Detection Using Fine-Tuned Parameters
-Overview
+**Enhanced Haar Cascades Model for Face Detection Using Fine-Tuned Parameters
+Overview**
 This project explores how fine-tuning the parameters of an OpenCV Haar
 Cascade classifier can improve face detection in grayscale images.
 
@@ -12,7 +12,7 @@ resources are limited.
 The study focuses on adjusting detection parameters to reduce false
 positives and improve detection performance across images with different
 scales and lighting conditions.
-Objectives
+**Objectives**
 - Study the effect of Haar Cascade parameters on grayscale image
   detection.
 - Fine-tune scaleFactor, minNeighbors, and minSize / maxSize.
@@ -20,12 +20,12 @@ Objectives
 - Evaluate detection using accuracy, precision, recall, and F1-score.
 - Explore possible extensions using deep-learning-based detection
   methods.
-Technologies Used
+**Technologies Used**
 - Python --- implementation
 - OpenCV --- image preprocessing and Haar Cascade detection
 - Google Colab --- experimentation and visualization
 - Haar Cascade classifier --- pre-trained detection model
-How It Works
+**How It Works**
 The detection workflow described in the paper consists of the following
 stages:
 1. Load the classifier --- use a pre-trained Haar Cascade XML
@@ -38,31 +38,30 @@ stages:
 5. Draw bounding boxes --- mark detected regions in the image.
 6. Fine-tune parameters --- adjust detection settings and review
    false positives and missed detections.
-Parameters Fine-Tuned
-  Parameter               Purpose                 Effect described in the
-study
-  scaleFactor           Controls the image      A lower value can
-scale reduction between improve detection
-search steps.           detail but increases
-computation time; a
-higher value is faster
+**Parameters Fine-Tuned**
+  Parameter Purpose Effect described in thestudy
+**scaleFactor**
+Controls the image A lower value can scale reduction
+between improve detection search steps.  detail but
+increases computation time; a higher value is faster
 but may miss objects.
-
-  minNeighbors          Specifies how many      Higher values reduce
+**minNeighbors**
+Specifies how many Higher values reduce
 neighbouring detections false positives; lower
-are required for a      values increase
-result to be retained.  sensitivity but may
+are required for a values increase
+result to be retained. sensitivity but may
 produce more incorrect
 detections.
-minSize / maxSize   Sets the minimum and    Helps filter detections
-maximum permitted       outside the expected
-detection size.         size range.
-Results
+**minSize / maxSize**
+Sets the minimum and Helps filter detections
+maximum permitted outside the expected
+detection size. size range.
+**Results**
 The paper reports the following comparison between the default and
 fine-tuned Haar Cascade models:
 
   Model                       Accuracy   Precision   Recall   F1-score
-  Default Haar Cascade             22%        0.21     0.20       0.21
+Default Haar Cascade             22%        0.21     0.20       0.21
 Fine-tuned Haar Cascade          90%        0.89     0.92       0.90
 
 According to the reported experiment, fine-tuning increased accuracy
@@ -73,7 +72,7 @@ Note: These figures are the results reported in the accompanying
 research paper. They should not be interpreted as independently
 reproduced benchmark results.
 
-Challenges and Limitations
+**Challenges and Limitations**
 The study identifies several challenges:
 - False positives and missed detections with default parameter
   settings.
@@ -82,7 +81,7 @@ The study identifies several challenges:
 - Limited dataset diversity, which can affect generalization.
 - Reduced reliability in complex backgrounds compared with modern
   deep-learning-based approaches.
-Potential Applications
+**Potential Applications**
 The paper discusses possible application areas for grayscale image
 detection, including:
 - Surveillance and security
@@ -91,7 +90,7 @@ detection, including:
 - Industrial inspection and automation
 These are potential application areas; the paper does not establish
 clinical or operational validation for them.
-Future Enhancements
+**Future Enhancements**
 Possible extensions identified in the study include:
 - Combining Haar Cascade with deep-learning models such as CNNs or
   YOLO.
@@ -101,14 +100,14 @@ Possible extensions identified in the study include:
 - Improving real-time processing through GPU acceleration or parallel
   processing.
 - Exploring deployment on edge and IoT devices such as Raspberry Pi.
-Project Scope and Reproducibility
+**Project Scope and Reproducibility**
 This README summarizes the research paper. The paper describes the
 methodology, tools, parameter choices, and reported evaluation results,
 but does not provide a complete repository-specific setup guide, exact
 final parameter values, dataset download link, or executable command
 sequence. Add those details to this README when the corresponding source
 code and assets are included in the GitHub repository.
-Authors
+**Authors**
 - Kamaleswari Pandurangan --- Assistant Professor, Department of
   Computer Science and Engineering, Er. Perumal Manimekalai College of
   Engineering, Hosur
@@ -116,7 +115,7 @@ Authors
   Engineering, Er. Perumal Manimekalai College of Engineering, Hosur
 - Vikash G --- Student, Department of Computer Science and
   Engineering, Er. Perumal Manimekalai College of Engineering, Hosur
-References
+**References**
 1. Viola, P., & Jones, M. (2001). Rapid object detection using a
    boosted cascade of simple features. Proceedings of the IEEE
    Computer Society Conference on Computer Vision and Pattern
