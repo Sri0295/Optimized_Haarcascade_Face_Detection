@@ -1,5 +1,6 @@
 **Enhanced Haar Cascades Model for Face Detection Using Fine-Tuned Parameters
 Overview**
+
 This project explores how fine-tuning the parameters of an OpenCV Haar
 Cascade classifier can improve face detection in grayscale images.
 
